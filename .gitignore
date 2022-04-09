@@ -2,3 +2,6 @@ bin/*
 include/*
 lib/*
 lib64
+src_js/node_modules
+src_js/node_modules/*
+src_js/yarn-error.log

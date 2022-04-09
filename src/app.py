@@ -1,11 +1,12 @@
-import a
 
-def intit(void):
-    return 'a'
+def render_html(html_filename, options=None)
+    from flask import render_template
+    return render_template(html_filename)
 
-def init2(void):
-    return 'b'
+if __name__ == '__main__':
+    from flask import Flask
+    app = Flask(__name__)
 
-def init3(void):
-    return 'c'
-
+    @app.route('/')
+    def root_url():
+        return render_html('index.html')
